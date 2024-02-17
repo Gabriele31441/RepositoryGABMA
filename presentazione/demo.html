@@ -20,6 +20,14 @@
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<style>
+			canvas {
+				border:1px solid #000;
+				display: block;
+				margin: 0 auto;
+			}
+		</style>
+
 	</head>
 
 	<body>
@@ -48,9 +56,11 @@
 
 				<section>
 					<h2>Hello There</h2>
+					<canvas id="gameCanvas" width="480" height="320"></canvas>
 					<p>
 						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
 					</p>
+					<button onclick="start()">start</button>
 				</section>
 
 				<!-- Example of nested vertical slides -->
@@ -469,6 +479,7 @@ Reveal.on( 'customevent', function() {
 		<script src="plugin/search/search.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
+		<script src="js/gioco.js"></script>
 		<script>
 
 			// Also available as an ES module, see:
